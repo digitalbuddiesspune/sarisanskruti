@@ -30,7 +30,7 @@ const Terms = () => {
           <div className="mb-12 p-8 bg-gradient-to-br from-amber-50 to-white border-2 border-amber-100 rounded-lg shadow-md">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Platform Ownership</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              The Platform is owned by <strong className="text-gray-900">WOKIFY VENTURE (OPC) PRIVATE LIMITED</strong>, a company incorporated under the Companies Act, 1956 with its registered office at <strong className="text-gray-900">365, 3rd Floor, H9, Vardhman Corporate Plaza, Netaji Subhash Place, Pitampura, Delhi, 110034</strong>.
+              The Platform is owned by <strong className="text-gray-900">ABC Enterprises Private Limited</strong>, a company incorporated under the Companies Act, 1956 with its registered office at <strong className="text-gray-900">123 Main Street, Business District, City, State, 123456</strong>.
             </p>
           </div>
 

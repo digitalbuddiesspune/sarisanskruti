@@ -26,7 +26,7 @@ const Contact = () => {
               <div className="text-3xl text-amber-600">📍</div>
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  365, 3rd Floor, H9, Vardhman Corporate Plaza, Netaji Subhash Place, Pitampura, Delhi, 110034
+                  123 Main Street, Business District, City, State, 123456
                 </p>
               </div>
             </div>
@@ -42,9 +42,23 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
                 <p className="text-gray-700">
-                  <a href="mailto:wokifyventures987@outlook.com" className="hover:text-amber-600 transition-colors">
-                    wokifyventures987@outlook.com
+                  <a href="mailto:contact@example.com" className="hover:text-amber-600 transition-colors">
+                    contact@example.com
                   </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="mb-12">
+            <h2 className="text-3xl font-light tracking-wider mb-6 text-gray-900 text-center">
+              PHONE
+            </h2>
+            <div className="flex items-start space-x-4 p-6 bg-white border-2 border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="text-3xl text-amber-600">📱</div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Mobile</h3>
+                <p className="text-gray-700">
+                  +91 98765 43210
                 </p>
               </div>
             </div>
@@ -54,11 +68,11 @@ const Contact = () => {
               COMPANY DETAILS
             </h2>
             <div className="flex items-start space-x-4 p-6 bg-white border-2 border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="text-3xl text-amber-600">📧</div>
+              <div className="text-3xl text-amber-600">🏢</div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Company Name</h3>
                 <p className="text-gray-700">
-                    Wokify Ventures (OPC) Private Limited
+                    ABC Enterprises Private Limited
                 </p>
               </div>
             </div>
