@@ -202,14 +202,20 @@ export async function verifyOTPSignup(req, res) {
     }
 
     const cleanPhone = phone.replace(/\D/g, '');
+    const cleanOTP = String(otp).trim();
     
-    // Find OTP record
+    // Validate phone number length
+    if (cleanPhone.length !== 10) {
+      return res.status(400).json({ message: 'Phone number must be 10 digits' });
+    }
+    
+    // Find OTP record - get the most recent one
     const otpDoc = await OTP.findOne({
       phone: cleanPhone,
       purpose: 'signup',
       verified: false,
       expiresAt: { $gt: new Date() },
-    });
+    }).sort({ createdAt: -1 });
 
     if (!otpDoc) {
       return res.status(400).json({ message: 'Invalid or expired OTP' });
@@ -220,10 +226,12 @@ export async function verifyOTPSignup(req, res) {
       return res.status(429).json({ message: 'Too many failed attempts. Please request a new OTP.' });
     }
 
-    // Verify OTP
-    if (otpDoc.otp !== otp) {
+    // Verify OTP - normalize both values for comparison
+    const storedOTP = String(otpDoc.otp).trim();
+    if (storedOTP !== cleanOTP) {
       otpDoc.attempts += 1;
       await otpDoc.save();
+      console.log(`OTP mismatch for phone ${cleanPhone}: stored="${storedOTP}" received="${cleanOTP}"`);
       return res.status(400).json({ message: 'Invalid OTP' });
     }
 
@@ -273,14 +281,20 @@ export async function verifyOTPSignin(req, res) {
     }
 
     const cleanPhone = phone.replace(/\D/g, '');
+    const cleanOTP = String(otp).trim();
     
-    // Find OTP record
+    // Validate phone number length
+    if (cleanPhone.length !== 10) {
+      return res.status(400).json({ message: 'Phone number must be 10 digits' });
+    }
+    
+    // Find OTP record - get the most recent one
     const otpDoc = await OTP.findOne({
       phone: cleanPhone,
       purpose: 'signin',
       verified: false,
       expiresAt: { $gt: new Date() },
-    });
+    }).sort({ createdAt: -1 });
 
     if (!otpDoc) {
       return res.status(400).json({ message: 'Invalid or expired OTP' });
@@ -291,10 +305,12 @@ export async function verifyOTPSignin(req, res) {
       return res.status(429).json({ message: 'Too many failed attempts. Please request a new OTP.' });
     }
 
-    // Verify OTP
-    if (otpDoc.otp !== otp) {
+    // Verify OTP - normalize both values for comparison
+    const storedOTP = String(otpDoc.otp).trim();
+    if (storedOTP !== cleanOTP) {
       otpDoc.attempts += 1;
       await otpDoc.save();
+      console.log(`OTP mismatch for phone ${cleanPhone}: stored="${storedOTP}" received="${cleanOTP}"`);
       return res.status(400).json({ message: 'Invalid OTP' });
     }
 
