@@ -26,7 +26,7 @@ const Contact = () => {
               <div className="text-3xl text-amber-600">📍</div>
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  123 Main Street, Business District, City, State, 123456
+                Office No 114,1st floor, Vardhman Capital Mall, Plot no 9 & 10, L.S.C  Shakti Nagar Gulabi Bagh, Delhi 110007
                 </p>
               </div>
             </div>
@@ -43,7 +43,7 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Email</h3>
                 <p className="text-gray-700">
                   <a href="mailto:contact@example.com" className="hover:text-amber-600 transition-colors">
-                    contact@example.com
+                    support@sarisanskruti.in
                   </a>
                 </p>
               </div>
@@ -58,7 +58,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Mobile</h3>
                 <p className="text-gray-700">
-                  +91 98765 43210
+                  +91 73036 80269
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Company Name</h3>
                 <p className="text-gray-700">
-                    ABC Enterprises Private Limited
+                    SAVARIYAAN TECHNORAFT PRIVATE LIMITED
                 </p>
               </div>
             </div>

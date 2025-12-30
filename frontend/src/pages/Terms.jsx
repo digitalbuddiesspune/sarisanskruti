@@ -30,7 +30,7 @@ const Terms = () => {
           <div className="mb-12 p-8 bg-gradient-to-br from-amber-50 to-white border-2 border-amber-100 rounded-lg shadow-md">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Platform Ownership</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              The Platform is owned by <strong className="text-gray-900">ABC Enterprises Private Limited</strong>, a company incorporated under the Companies Act, 1956 with its registered office at <strong className="text-gray-900">123 Main Street, Business District, City, State, 123456</strong>.
+              The Platform is owned by <strong className="text-gray-900">SAVARIYAAN TECHNORAFT PRIVATE LIMITED</strong>, a company incorporated under the Companies Act, 1st june 2024 with its registered office at <strong className="text-gray-900">Office No 114,1st floor, Vardhman Capital Mall, Plot no 9 & 10, L.S.C  Shakti Nagar Gulabi Bagh, Delhi 110007</strong>.
             </p>
           </div>
 

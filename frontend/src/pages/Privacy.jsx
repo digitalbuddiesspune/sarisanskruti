@@ -81,7 +81,7 @@ const Privacy = () => {
               Your Rights
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              You can request data deletion or modification by contacting us at <a href="mailto:contact@example.com" className="text-amber-600 hover:text-amber-700 underline">contact@example.com</a>.
+              You can request data deletion or modification by contacting us at <a href="mailto:contact@example.com" className="text-amber-600 hover:text-amber-700 underline">support@sarisanskruti.in</a>.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ const Privacy = () => {
               Contact Us
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              For privacy concerns, email us at <a href="mailto:contact@example.com" className="text-amber-600 hover:text-amber-700 underline">contact@example.com</a>.
+              For privacy concerns, email us at <a href="mailto:contact@example.com" className="text-amber-600 hover:text-amber-700 underline">support@sarisanskruti.in</a>.
             </p>
           </div>
 
