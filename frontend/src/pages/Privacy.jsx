@@ -22,7 +22,7 @@ const Privacy = () => {
               Introduction
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              At ABC Enterprises, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.
+              At SAVARIYAAN TECHNORAFT PRIVATE LIMITED, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data.
             </p>
           </div>
 
