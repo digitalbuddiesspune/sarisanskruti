@@ -8,6 +8,7 @@ import Contact from '../pages/Contact';
 import Shipping from '../pages/Shipping';
 import Returns from '../pages/Returns';
 import Privacy from '../pages/Privacy';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
 import Terms from '../pages/Terms';
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
@@ -108,6 +109,7 @@ const Router = () => {
           <Route path="shipping" element={<Shipping />} />
           <Route path="returns" element={<Returns />} />
           <Route path="privacy" element={<Privacy />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms" element={<Terms />} />
           <Route path="wishlist" element={<Wishlist />} />
 
